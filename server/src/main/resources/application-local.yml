@@ -11,6 +11,11 @@ spring:
   sql:
     init:
       schema-locations: classpath*:db/h2/schema.sql
+  thymeleaf:
+    prefix: classpath:templates/
+    suffix: .html
+    mode: HTML5
+    cache: false
 
   security:
     oauth2:

@@ -1,15 +1,10 @@
 package com.project.fintech.security.oauth.service;
 
-import com.project.*;
 import com.project.fintech.model.Users;
 import com.project.fintech.repository.UsersRepository;
 import com.project.fintech.security.oauth.entity.OauthUserProfile;
 import com.project.fintech.security.oauth.repository.OauthUserRepository;
 import com.project.fintech.security.oauth.utils.OAuthAttributes;
-
-import io.jsonwebtoken.Header;
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -21,9 +16,7 @@ import org.springframework.security.oauth2.core.user.DefaultOAuth2User;
 import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.stereotype.Service;
 
-import java.time.Duration;
 import java.util.Collections;
-import java.util.Date;
 import java.util.Map;
 import java.util.Optional;
 
