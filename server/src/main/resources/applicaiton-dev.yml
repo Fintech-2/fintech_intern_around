@@ -15,6 +15,11 @@ spring:
     properties:
       hibernate: # custom options
         format_sql: true # sql 로그를 포매팅해서 보여줌
+  thymeleaf:
+    prefix: classpath:templates/
+    suffix: .html
+    mode: HTML5
+    cache: false
 
   security:
     oauth2:
